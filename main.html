@@ -13,7 +13,7 @@
 
 	<style>
         /* General reset for margin and padding */
-        * {
+                * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
@@ -21,55 +21,58 @@
 
         body {
             font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;         /* Center the container horizontally */
+            align-items: center;             /* Center the container vertically */
+            height: 100vh;                   /* Full viewport height */
+            background-color: #e0e0e0;       /* Light gray background for contrast */
         }
 
         /* Container Styling */
         .container {
-            display: flex;                    
-            justify-content: space-around;   
-            align-items: center;            
-            height: 60vh;                   
-            padding: 110px;                   
-            background-color: #f0f0f0;       
-			border: 5px solid black;
-			border-radius:50px;
-		}
+            width: 400px;                    /* Specific width for the container */
+            padding: 20px;                   /* Padding inside the container */
+            border: 2px solid #333;           /* Border around the container */
+            background-color: #fff;           /* White background for the container */
+            border-radius: 15px;              /* Rounded corners for the container */
+            display: flex;                    /* Use Flexbox to layout blocks */
+            justify-content: space-between;   /* Space blocks evenly */
+            align-items: center;             /* Center blocks vertically within the container */
+        }
 
         /* Block Styling */
         .block {
-            width: 100px;                    
-            height: 100px;                   
-            border-radius: 50%;              
+            width: 100px;                    /* Fixed width for each block */
+            height: 100px;                   /* Fixed height for each block */
+            border-radius: 50%;              /* Make the block a circle */
+            display: flex;                   /* Use Flexbox to center text inside the circle */
+            justify-content: center;         /* Center text horizontally */
+            align-items: center;             /* Center text vertically */
+            color: #fff;                     /* Text color inside the blocks */
+            font-size: 1.2rem;               /* Font size for the text */
+            font-weight: bold;               /* Bold text */
         }
 
-        /* Specific Block Colors */
-        .block-1 {
-            background-color: green;
-			height:25vh;
-			width:25vh;
+        /* Specific Block Colors and Text */
+        .block-red {
+            background-color: #e60023;       /* Red */
         }
 
-        .block-2 {
-            background-color: white; 
-			height:25vh;
-			width:25vh;
+        .block-green {
+            background-color: #00c853;       /* Green */
         }
 
-        .block-3 {
-            background-color: red;
-			height:25vh;
-			width:25vh;
+        .block-yellow {
+            background-color: #ffeb3b;       /* Yellow */
+            color: #000;                     /* Text color for better contrast */
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <div class="block block-1"></div>
-        <div class="block block-2"></div>
-        <div class="block block-3"></div>
+        <div class="block block-red"></div>
+        <div class="block block-green"></div>
+        <div class="block block-yellow"></div>
     </div>
 </body>
-
-</body>
-
 </html>
