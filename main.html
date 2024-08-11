@@ -41,29 +41,7 @@
         }
 
         /* Block Styling */
-        .red {
-            width: 100px;                    /* Fixed width for each block */
-            height: 100px;                   /* Fixed height for each block */
-            border-radius: 50%;              /* Make the block a circle */
-            display: flex;                   /* Use Flexbox to center text inside the circle */
-            justify-content: center;         /* Center text horizontally */
-            align-items: center;             /* Center text vertically */
-            color: #fff;                     /* Text color inside the blocks */
-            font-size: 1.2rem;               /* Font size for the text */
-            font-weight: bold;               /* Bold text */
-        }
-        .green {
-            width: 100px;                    /* Fixed width for each block */
-            height: 100px;                   /* Fixed height for each block */
-            border-radius: 50%;              /* Make the block a circle */
-            display: flex;                   /* Use Flexbox to center text inside the circle */
-            justify-content: center;         /* Center text horizontally */
-            align-items: center;             /* Center text vertically */
-            color: #fff;                     /* Text color inside the blocks */
-            font-size: 1.2rem;               /* Font size for the text */
-            font-weight: bold;               /* Bold text */
-        }
-        .yellow {
+        .block {
             width: 100px;                    /* Fixed width for each block */
             height: 100px;                   /* Fixed height for each block */
             border-radius: 50%;              /* Make the block a circle */
@@ -75,26 +53,28 @@
             font-weight: bold;               /* Bold text */
         }
 
-        /* /* Specific Block Colors and Text */
-        /* .block-red {
-            background-color: #e60023;       /* Red */
-        /* } */
+        /* Specific Block Colors and Text */
+       .red {
+    /* existing styles... */
+    background-color: rgb(255, 0, 0); /* Red */
+}
 
-        /* .block-green {
-            background-color: #00c853;       /* Green */ */
-        /* } */
+.green {
+    /* existing styles... */
+    background-color: rgb(0, 128, 0); /* Green */
+}
 
-        /* .block-yellow {
-            background-color: #ffeb3b;       /* Yellow */
-            /* color: #000;                     /* Text color for better contrast */ */
-        /* } */ 
+.yellow {
+    /* existing styles... */
+    background-color: rgb(255, 255, 0); /* Yellow */
+}
     </style>
 </head>
 <body>
     <div class="container">
-        <div class="red"></div>
-        <div class="green"></div>
-        <div class="yellow"></div>
+        <div class="block block-red"></div>
+        <div class="block block-green"></div>
+        <div class="block block-yellow"></div>
     </div>
 </body>
 </html>
