@@ -41,7 +41,29 @@
         }
 
         /* Block Styling */
-        .block {
+        .red {
+            width: 100px;                    /* Fixed width for each block */
+            height: 100px;                   /* Fixed height for each block */
+            border-radius: 50%;              /* Make the block a circle */
+            display: flex;                   /* Use Flexbox to center text inside the circle */
+            justify-content: center;         /* Center text horizontally */
+            align-items: center;             /* Center text vertically */
+            color: #fff;                     /* Text color inside the blocks */
+            font-size: 1.2rem;               /* Font size for the text */
+            font-weight: bold;               /* Bold text */
+        }
+        .green {
+            width: 100px;                    /* Fixed width for each block */
+            height: 100px;                   /* Fixed height for each block */
+            border-radius: 50%;              /* Make the block a circle */
+            display: flex;                   /* Use Flexbox to center text inside the circle */
+            justify-content: center;         /* Center text horizontally */
+            align-items: center;             /* Center text vertically */
+            color: #fff;                     /* Text color inside the blocks */
+            font-size: 1.2rem;               /* Font size for the text */
+            font-weight: bold;               /* Bold text */
+        }
+        .yellow {
             width: 100px;                    /* Fixed width for each block */
             height: 100px;                   /* Fixed height for each block */
             border-radius: 50%;              /* Make the block a circle */
@@ -53,26 +75,26 @@
             font-weight: bold;               /* Bold text */
         }
 
-        /* Specific Block Colors and Text */
-        .block-red {
-            background-color: rgb(255,0,0);       /* Red */
-        }
+        /* /* Specific Block Colors and Text */
+        /* .block-red {
+            background-color: #e60023;       /* Red */
+        /* } */
 
-        .block-green {
-            background-color: rgb(255,235,59);      /* Green */
-        }
+        /* .block-green {
+            background-color: #00c853;       /* Green */ */
+        /* } */
 
-        .block-yellow {
+        /* .block-yellow {
             background-color: #ffeb3b;       /* Yellow */
-            color: #000;                     /* Text color for better contrast */
-        }
+            /* color: #000;                     /* Text color for better contrast */ */
+        /* } */ 
     </style>
 </head>
 <body>
     <div class="container">
-        <div class="block block-red"></div>
-        <div class="block block-green"></div>
-        <div class="block block-yellow"></div>
+        <div class="red"></div>
+        <div class="green"></div>
+        <div class="yellow"></div>
     </div>
 </body>
 </html>
